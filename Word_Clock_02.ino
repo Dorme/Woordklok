@@ -394,7 +394,7 @@ void loop(){
   }else{
     colorWipe(colorBlack, 0);
     paintWord(arrEEN, colorRed);
-    Serial.println("De tijd is not niet gezet.  Gelieve de tijd te zetten");
+    Serial.println("De tijd is nog niet gezet.  Gelieve de tijd te zetten");
     Serial.println("TimeRTCSet voorbeeld, of DS1307RTC SetTime voorbeeld.");
     Serial.println();
     delay(4000);
@@ -475,7 +475,7 @@ void displayTime(){
   //colorWipe(colorBlack, 0);
   // Now, turn on the "It is" leds
   paintWord(arrHET, colorWhite);
-  // Indien de tijd effectief juist is, zal IS groen worden
+  // Indien de tijd effectief juist is, zal IS groen worden --> nice :-)
   if((minute()==5)
     |(minute()==10)
     |(minute()==15)
